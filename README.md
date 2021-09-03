@@ -44,6 +44,7 @@ python main.py --dataset SHD --temporal_kernel kt --dt 1 --T 500 --batch_size 25
 Our model achieves the following performance on: 
 
 - DVS128-Gesture dataset
+
 | Method                                            | Network                    | Accuracy (%) |
 | ------------------------------------------------- | -------------------------- | ------------ |
 | DTS-SNN (with zero sum temporal kernel)           | 1600-400-11 (MLP)          | 95.6%        |
