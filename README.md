@@ -1,5 +1,5 @@
 # DTS-SNN
-This repository is the official implementation of DTS-SNN: Spiking Neural Networks with Dynamic Time-Surfaces.
+This repository is the official implementation of *DTS-SNN: Spiking Neural Networks with Dynamic Time-Surfaces*
 
 ## Requirements
 To install requirements:
