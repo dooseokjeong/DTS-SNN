@@ -42,6 +42,7 @@ python main.py --dataset SHD --temporal_kernel kt --dt 1 --T 500 --batch_size 25
 
 ## Results
 Our model achieves the following performance on: 
+
 DVS-128 dataset
 | Method                | Network                    | Accuracy (%) |
 | --------------------- |--------------------------- | ------------ |
