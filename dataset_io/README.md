@@ -1,1 +1,1 @@
-
+This is a slightly modified version of ebdataset (https://github.com/tihbe/python-ebdataset) and snntorch (https://github.com/jeshraghian/snntorch) and torchneuromorphic (https://github.com/nmi-lab/torchneuromorphic
