@@ -28,14 +28,14 @@ python main.py --dataset SHD --temporal_kernel kt --dt 1 --T 500 --batch_size 25
 
 To evaluate a DTS-SNN with zero sum temporal kernel on DVS128-Gesture or N-Cars or SHD, run this command:
 ```evaluation
-python main.py --dataset DVS128-Gesture --temporal_kernel ktzs --batch_size 16 --mode eval
+python main.py --dataset DVS128-Gesture --temporal_kernel ktzs --ds 1 --dt 5 --T 300 --batch_size 16 --mode eval
 python main.py --dataset N-Cars --temporal_kernel ktzs --dt 1 --T 100 --batch_size 64 --mode eval
 python main.py --dataset SHD --temporal_kernel ktzs --dt 1 --T 500 --batch_size 256 --mode eval
 ```
 
 To evaluate a DTS-SNN with single exponential temporal kernel on DVS128-Gesture or N-Cars or SHD, run this command:
 ```evaluation
-python main.py --dataset DVS128-Gesture --temporal_kernel kt --batch_size 16 --mode eval
+python main.py --dataset DVS128-Gesture --temporal_kernel kt --ds 1 --dt 5 --T 300 --batch_size 16 --mode eval
 python main.py --dataset N-Cars --temporal_kernel kt --dt 1 --T 100 --batch_size 64 --mode eval
 python main.py --dataset SHD --temporal_kernel kt --dt 1 --T 500 --batch_size 256 --mode eval
 ```
