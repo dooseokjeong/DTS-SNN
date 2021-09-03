@@ -10,7 +10,7 @@ pip install -r requirements.txt
 
 ## Training
 
-To train a DTS-SNN with zero sum temporal kernel k_{tzs} on DVS128-Gesture or N-Cars or SHD, run this command:
+To train a DTS-SNN with zero sum temporal kernel $`k_{tzs}`$ on DVS128-Gesture or N-Cars or SHD, run this command:
 ```train
 python main.py --dataset DVS128-Gesture --temporal_kernel ktzs --ds 1 --dt 5 --T 300 --batch_size 16 --gpu 0 1 --mode train
 python main.py --dataset N-Cars --temporal_kernel ktzs --dt 1 --T 100 --batch_size 64 --gpu 0 1 --mode train
