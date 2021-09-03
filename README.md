@@ -52,11 +52,11 @@ DVS128-Gesture dataset
 N-Cars dataset
 | Method                | Network                    | Accuracy (%) |
 | --------------------- |--------------------------- | ------------ |
-| DTS-SNN with (with zero sum temporal kernel) | 3000-400-2 (MLP)           | 90.28%       |
-| DTS-SNN with (with single exponetial temporal kernel)  | 3000-400-2 (MLP)           | 89.47%       |
+| DTS-SNN (with zero sum temporal kernel) | 3000-400-2 (MLP)           | 90.28%       |
+| DTS-SNN (with single exponetial temporal kernel)  | 3000-400-2 (MLP)           | 89.47%       |
 
 SHD dataset
 | Method                | Network                    | Accuracy (%) |
 | --------------------- |--------------------------- | ------------ |
-| DTS-SNN with (with zero sum temporal kernel)| 350-128-2 (MLP)            | 77.99%       |
-| DTS-SNN with (with single exponetial temporal kernel)  | 350-128-2 (MLP)            | 66.30%       |
+| DTS-SNN (with zero sum temporal kernel)| 350-128-2 (MLP)            | 77.99%       |
+| DTS-SNN (with single exponetial temporal kernel)  | 350-128-2 (MLP)            | 66.30%       |
