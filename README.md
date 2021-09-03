@@ -1,5 +1,5 @@
 # DTS-SNN
-This repository is the official implementation of **DTS-SNN: Spiking Neural Networks with Dynamic Time-Surfaces** by Donghyung Yoo, Seongsik Park, Doo Seok Jeong.
+This repository is the official implementation of **DTS-SNN: Spiking Neural Networks with Dynamic Time-Surfaces** by Donghyung Yoo, Seongsik Park and Doo Seok Jeong.
 
 ## Requirements
 To install requirements:
