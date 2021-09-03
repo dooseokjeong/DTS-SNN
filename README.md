@@ -44,19 +44,19 @@ python main.py --dataset SHD --temporal_kernel kt --dt 1 --T 500 --batch_size 25
 Our model achieves the following performance on: 
 
 DVS128-Gesture dataset
-| Method                | Network                    | Accuracy (%) |
-| --------------------- |--------------------------- | ------------ |
-| DTS-SNN (with zero sum temporal kernel) | 1600-400-11 (MLP)          | 95.6%        |
+| Method                                            | Network                    | Accuracy (%) |
+| ------------------------------------------------- | -------------------------- | ------------ |
+| DTS-SNN (with zero sum temporal kernel)           | 1600-400-11 (MLP)          | 95.6%        |
 | DTS-SNN (with single exponetial temporal kernel)  | 1600-400-11 (MLP)          | 92.82%       |
 
 N-Cars dataset
-| Method                | Network                    | Accuracy (%) |
-| --------------------- |--------------------------- | ------------ |
-| DTS-SNN (with zero sum temporal kernel) | 3000-400-2 (MLP)           | 90.28%       |
+| Method                                            | Network                    | Accuracy (%) |
+| ------------------------------------------------- | -------------------------- | ------------ |
+| DTS-SNN (with zero sum temporal kernel)           | 3000-400-2 (MLP)           | 90.28%       |
 | DTS-SNN (with single exponetial temporal kernel)  | 3000-400-2 (MLP)           | 89.47%       |
 
 SHD dataset
-| Method                | Network                    | Accuracy (%) |
-| --------------------- |--------------------------- | ------------ |
-| DTS-SNN (with zero sum temporal kernel)| 350-128-2 (MLP)            | 77.99%       |
+| Method                                            | Network                    | Accuracy (%) |
+| ------------------------------------------------- | -------------------------- | ------------ |
+| DTS-SNN (with zero sum temporal kernel)           | 350-128-2 (MLP)            | 77.99%       |
 | DTS-SNN (with single exponetial temporal kernel)  | 350-128-2 (MLP)            | 66.30%       |
