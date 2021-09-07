@@ -94,7 +94,7 @@ def train(model, train_loader, criterion, epoch, optimizer):
                 if model.module.dataset == 'DVS128-Gesture':
                     labels = torch.unique(labels, dim=1).reshape(args.batch_size, -1)
                 elif model.module.dataset == 'N-Cars':
-                    labels = torch.zeros(args.batch_size, model.module.outs).scatter_(1, labels.view(-1,1), 1)
+                    labels = torch.zeros(args.batch_size, model.module.outs).scatter_(1, labels.to(torch.int64).view(-1,1), 1)
                 else:
                     labels = torch.zeros(args.batch_size, model.module.outs).scatter_(1, labels.to(torch.int64).view(-1,1), 1)                 
                 outputs = model(images.to(device), args.batch_size // (torch.cuda.device_count())) 
@@ -102,7 +102,7 @@ def train(model, train_loader, criterion, epoch, optimizer):
                 if model.dataset == 'DVS128-Gesture':
                     labels = torch.unique(labels, dim=1).reshape(args.batch_size, -1)
                 elif model.dataset == 'N-Cars':
-                    labels = torch.zeros(args.batch_size, model.outs).scatter_(1, labels.view(-1,1), 1)
+                    labels = torch.zeros(args.batch_size, model.outs).scatter_(1, labels.to(torch.int64).view(-1,1), 1)
                 else:
                     labels = torch.zeros(args.batch_size, model.outs).scatter_(1, labels.to(torch.int64).view(-1,1), 1) 
                 outputs = model(images.to(device), args.batch_size) 
@@ -127,7 +127,7 @@ def test(model, test_loader, criterion):
                 if model.module.dataset == 'DVS128-Gesture':
                     targets = torch.unique(targets, dim=1).reshape(args.batch_size, -1)
                 elif model.module.dataset == 'N-Cars':
-                    targets = torch.zeros(args.batch_size, model.module.outs).scatter_(1, targets.view(-1,1), 1)
+                    targets = torch.zeros(args.batch_size, model.module.outs).scatter_(1, targets.to(torch.int64).view(-1,1), 1)
                 else:
                     targets = torch.zeros(args.batch_size, model.module.outs).scatter_(1, targets.to(torch.int64).view(-1,1), 1)
                 outputs = model(inputs.to(device), args.batch_size // (torch.cuda.device_count()))
@@ -135,7 +135,7 @@ def test(model, test_loader, criterion):
                 if model.dataset == 'DVS128-Gesture':
                     targets = torch.unique(targets, dim=1).reshape(args.batch_size, -1)
                 elif model.dataset == 'N-Cars':
-                    targets = torch.zeros(args.batch_size, model.outs).scatter_(1, targets.view(-1,1), 1)
+                    targets = torch.zeros(args.batch_size, model.outs).scatter_(1, targets.to(torch.int64).view(-1,1), 1)
                 else:
                     targets = torch.zeros(args.batch_size, model.outs).scatter_(1, targets.to(torch.int64).view(-1,1), 1)
                 outputs = model(inputs.to(device), args.batch_size)
