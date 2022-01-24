@@ -47,8 +47,8 @@ Our model achieves the following performance on:
 
 | Method                                            | Network                    | Accuracy (%) |
 | ------------------------------------------------- | -------------------------- | ------------ |
-| DTS-SNN (with zero sum temporal kernel)           | 1600-400-11 (FCN)          | 95.6%        |
-| DTS-SNN (with single exponetial temporal kernel)  | 1600-400-11 (FCN)          | 92.82%       |
+| DTS-SNN (with zero sum temporal kernel)           | 3136-400-11 (FCN)          | 96.06%       |
+| DTS-SNN (with single exponetial temporal kernel)  | 3136-400-11 (FCN)          | 92.94%       |
 
 - N-Cars dataset
 
@@ -61,5 +61,5 @@ Our model achieves the following performance on:
 
 | Method                                            | Network                    | Accuracy (%) |
 | ------------------------------------------------- | -------------------------- | ------------ |
-| DTS-SNN (with zero sum temporal kernel)           | 350-128-2 (FCN)            | 77.99%       |
-| DTS-SNN (with single exponetial temporal kernel)  | 350-128-2 (FCN)            | 66.30%       |
+| DTS-SNN (with zero sum temporal kernel)           | 105-128-2 (FCN)            | 82.17%       |
+| DTS-SNN (with single exponetial temporal kernel)  | 105-128-2 (FCN)            | 66.21%       |
