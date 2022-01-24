@@ -63,9 +63,9 @@ def load_hyperparameter(dataset, temporal_kernel, dt, T):
     # in_channels, r, in_c, tem_kernel, T, dt, tau_trace, trace_scale_factor, tau_m, tau_s, thresh, hiddens, outs
     if dataset == 'DVS128-Gesture': # 2d
         if temporal_kernel == 'ktzs':
-            return 128, 128, 2, 16, 16, 'ktzs', T, dt, (50, 100), (1, 0.5), 60, 20, 0.05, 400, 11
+            return 128, 128, 3, 16, 16, 'ktzs', T, dt, (50, 100), (1, 0.5), 60, 20, 0.05, 400, 11
         elif temporal_kernel == 'kt':
-            return 128, 128, 2, 16, 16, 'kt', T, dt, 50, 1, 60, 20, 0.05, 400, 11
+            return 128, 128, 3, 16, 16, 'kt', T, dt, 50, 1, 60, 20, 0.05, 400, 11
         
     elif dataset == 'N-Cars': # 2d 
         if temporal_kernel == 'ktzs':
@@ -75,9 +75,9 @@ def load_hyperparameter(dataset, temporal_kernel, dt, T):
         
     elif dataset == 'SHD': # 1d
         if temporal_kernel == 'ktzs':
-            return 700, 2, 10, 'ktzs', T, dt, (20, 40), (1, 0.5), 40, 20, 0.05, 128, 20
+            return 700, 1, 20, 'ktzs', T, dt, (20, 40), (1, 0.5), 40, 20, 0.05, 128, 20
         elif temporal_kernel == 'kt':
-            return 700, 2, 10, 'kt', T, dt, 20, 1, 40, 20, 0.05, 128, 20
+            return 700, 1, 20, 'kt', T, dt, 20, 1, 40, 20, 0.05, 128, 20
         
         
 def make_model(dataset, temporal_kernel, dt, T):
