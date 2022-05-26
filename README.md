@@ -25,7 +25,6 @@ python main.py --dataset SHD --temporal_kernel kt --dt 1 --T 500 --num_workers 0
 ```
 
 ## Evaluation
-Pre-trained weight is at the 'pretrained' folder.
 
 To evaluate a DTS-SNN with zero sum temporal kernel on DVS128-Gesture or N-Cars or SHD, run this command:
 ```evaluation
